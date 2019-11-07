@@ -6,10 +6,10 @@ import {IResponse} from '../../iresponse';
 
 @Component({
   selector: 'app-test-api',
-  templateUrl: './test-api.component.html',
-  styleUrls: ['./test-api.component.css']
+  templateUrl: './list-product.component.html',
+  styleUrls: ['./list-product.component.css']
 })
-export class TestApiComponent implements OnInit {
+export class ListProductComponent implements OnInit {
   books: IBook[] = [];
   p = 1;
 

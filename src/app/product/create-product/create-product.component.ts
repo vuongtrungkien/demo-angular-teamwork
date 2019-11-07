@@ -7,10 +7,10 @@ import {IValidation} from '../../ivalidation';
 
 @Component({
   selector: 'app-create-book',
-  templateUrl: './create-book.component.html',
-  styleUrls: ['./create-book.component.css']
+  templateUrl: './create-product.component.html',
+  styleUrls: ['./create.product.component.css']
 })
-export class CreateBookComponent implements OnInit {
+export class CreateProductComponent implements OnInit {
   formBooks;
   validator: IValidation = {};
 

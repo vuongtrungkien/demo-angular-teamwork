@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestApiComponent } from './api/test-api/test-api.component';
+import { ListProductComponent } from './product/list-product/list-product.component';
 import {HttpClientModule} from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { CreateBookComponent } from './api/create-book/create-book.component';
+import { CreateProductComponent } from './product/create-product/create-product.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { EditBookComponent } from './api/edit-book/edit-book.component';
+import { EditBookComponent } from './product/edit-book/edit-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestApiComponent,
-    CreateBookComponent,
+    ListProductComponent,
+    CreateProductComponent,
     EditBookComponent
   ],
   imports: [

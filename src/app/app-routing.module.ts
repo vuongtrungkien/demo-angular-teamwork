@@ -1,27 +1,24 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {CreateBookComponent} from './api/create-book/create-book.component';
-import {TestApiComponent} from './api/test-api/test-api.component';
-import {EditBookComponent} from './api/edit-book/edit-book.component';
+import {CreateProductComponent} from './product/create-product/create-product.component';
+import {ListProductComponent} from './product/list-product/list-product.component';
+import {EditBookComponent} from './product/edit-book/edit-book.component';
 
 
 const routes: Routes = [
   {
     path: 'add',
-    component: CreateBookComponent,
+    component: CreateProductComponent,
   },
   {
     path: '',
-    component: TestApiComponent,
+    component: ListProductComponent,
+    pathMatch: 'full',
   },
   {
     path: 'edit/:id',
     component: EditBookComponent,
   },
-  // {
-  //   path: '',
-  //   component: TestApiComponent,
-  // }
 ];
 
 @NgModule({
